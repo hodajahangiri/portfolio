@@ -23,6 +23,10 @@ body {
   padding: 0 2vw;
   background-color: var(--background);
 }
+header{
+  background-color: var(--background);
+  z-index: 9999999;
+}
 main {
   padding: 7vh 0;
 }
