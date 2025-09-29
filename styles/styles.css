@@ -8,6 +8,8 @@
   --accent-color: #3d6d9a;
   --deactivate-color: #949495;
   --activate-color: var(--accent-color);
+  --card-background:var(--border-color);
+  --card-hover-background:#97bbdd;
 }
 
 * {
@@ -18,23 +20,48 @@
   font-variation-settings: "wdth" 100;
   background-color: var(--background);
 }
-
 body {
   padding: 0 2vw;
 }
+main {
+  padding: 7vh 0;
+}
 
+
+/* TEXT STYLING */
 a {
   text-decoration: none;
 }
-
 .active {
   color: var(--activate-color) !important;
   text-decoration: underline !important;
 }
-
-main {
-  padding: 7vh 0;
+#bold_text {
+  font-weight: bolder;
 }
+/* TEXT STYLING END */
+
+/* BUTTON STYLING */
+.btn_shape {
+  height: 40px;
+  padding: 0 30px;
+  border-radius: 7px;
+  font-size: 15px;
+  border: none;
+}
+.btn_primary {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+.btn_primary:hover {
+  background-color: var(--accent-color);
+  color: black;
+}
+.btn_section {
+  display: flex;
+  gap: 20px;
+}
+/* BUTTON STYLING END */
 
 /* FOOTER STYLING */
 footer {

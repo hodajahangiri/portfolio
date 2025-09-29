@@ -27,30 +27,6 @@
   color: var(--primary-color);
 }
 
-#bold_text {
-  font-weight: bolder;
-}
-
-.btn_shape {
-  height: 40px;
-  padding: 0 30px;
-  border-radius: 7px;
-  font-size: 15px;
-  border: none;
-}
-.btn_primary {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-}
-.btn_primary:hover {
-  background-color: var(--accent-color);
-  color: black;
-}
-.intro_btns {
-  display: flex;
-  gap: 20px;
-}
-
 @media (max-width: 780px) {
   .intro {
     align-items: start;
