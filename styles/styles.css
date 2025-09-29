@@ -18,10 +18,10 @@
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
-  background-color: var(--background);
 }
 body {
   padding: 0 2vw;
+  background-color: var(--background);
 }
 main {
   padding: 7vh 0;
@@ -55,6 +55,15 @@ a {
   border-radius: 7px;
   font-size: 15px;
   border: none;
+}
+.btn_wide_shape{
+  height: 40px;
+  width: 100%;
+  padding: 0 30px;
+  border-radius: 7px;
+  font-size: 15px;
+  border: none;
+
 }
 .btn_primary {
   background-color: var(--primary-color);

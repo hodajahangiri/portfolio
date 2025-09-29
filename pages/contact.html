@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
   </head>
   <body>
     <!-- HEADER-->
@@ -46,15 +47,113 @@
             <a href="../pages/projects.html" class="nav_page">PROJECTS</a>
           </li>
           <li><a href="../pages/about.html" class="nav_link">ABOUT</a></li>
-          <li><a href="../pages/contact.html" class="nav_page active">CONTACT</a></li>
+          <li>
+            <a href="../pages/contact.html" class="nav_page active">CONTACT</a>
+          </li>
         </ul>
       </nav>
       <!-- NAVBAR END -->
     </header>
     <!-- HEADER END -->
     <!-- MAIN -->
-    <main>
-
+    <main class="contact_main">
+      <section class="contact_info">
+        <h1 class="contact_info_text">Contact Me!</h1>
+        <p class="contact_info_text">
+          Fill the form out, and expect a response within 24 hours.
+        </p>
+        <!-- email -->
+        <div class="contact_info_item">
+          <i class="bi bi-envelope"></i>
+          <p>hoda.cs87@gmail.com</p>
+        </div>
+        <!-- phone -->
+        <div class="contact_info_item">
+          <i class="bi bi-telephone"></i>
+          <p>408-455-6012</p>
+        </div>
+        <!-- location -->
+        <div class="contact_info_item">
+          <i class="bi bi-geo-alt"></i>
+          <p>San Jose, CA</p>
+        </div>
+      </section>
+      <form class="contact_form" action="../pages/index.html">
+        <!-- RADIO -->
+        <section class="contact_form_item">
+          <p>
+            <label id="bold_text" for="subject"
+              >What can I help you with?
+            </label>
+          </p>
+          <div>
+            <input type="radio" id="web_development" name="subject" required />
+            <label for="web_development">Web Development</label>
+          </div>
+          <div>
+            <input type="radio" id="other" name="subject" required />
+            <label for="other">Other</label>
+          </div>
+        </section>
+        <!-- FIRST NAME & LAST NAME -->
+        <section class="contact_form_item">
+          <!-- FIRST NAME -->
+          <div>
+            <p><label for="firstname">First Name</label></p>
+            <input
+              class="input_box"
+              type="text"
+              id="firstname"
+              required
+              placeholder="First Name"
+            /><br />
+          </div>
+          <!-- LAST NAME -->
+          <div>
+            <p><label for="lastname">Last Name</label></p>
+            <input
+              class="input_box"
+              type="text"
+              id="lastname"
+              required
+              placeholder="Last Name"
+            /><br />
+          </div>
+        </section>
+        <!-- PHONE & EMAIL -->
+        <section class="contact_form_item">
+          <!-- PHONE -->
+          <div>
+            <p><label for="phone">Phone Number</label></p>
+            <input
+              class="input_box"
+              type="tel"
+              id="phone"
+              required
+              placeholder="+1(###)###-####"
+            /><br />
+          </div>
+          <!-- EMAIL -->
+          <div>
+            <p><label for="email">Email</label></p>
+            <input
+              class="input_box"
+              type="email"
+              id="email"
+              required
+              placeholder="example@domain.com"
+            /><br />
+          </div>
+        </section>
+        <!-- MESSAGE -->
+        <section class="contact_form_item">
+          <p><label for="message">Message</label></p>
+          <input class="message_box" type="text" id="message" required /><br />
+        </section>
+        <section class="contact_form_item">
+          <button type="submit" class="btn_wide_shape btn_primary">Submit</button>
+        </section>
+      </form>
     </main>
     <!-- MAIN END-->
     <footer>
