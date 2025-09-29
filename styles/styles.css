@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --background: #282c37;
+  --primary-color: #5392cd;
+  --text-color: #fff;
+  --border-color:#82a0bc;
+  --accent-color: #90c5f6;
+  --deactivate-color: #949495;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  background-color: var(--background);
+}
+
+body{
+  padding: 0 2vw;
+}
+
+a {
+  text-decoration: none;
+}
+/* NAVBAR STYLING */
+header {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px var(--deactivate-color) solid;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 10px;
+}
+
+.nav_links {
+  /* width: 20%; */
+  display: flex;
+  gap:15px;
+  list-style: none;
+  margin: auto 0px;
+  padding:10px;
+}
+.nav_link {
+  text-decoration: none;
+  color: var(--deactivate-color);
+}
+.nav_link:hover {
+  color: var(--primary-color);
+}
+
+.nav_pages {
+  /* width: 60%; */
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+  gap:20px;
+  list-style: none;
+  margin: auto 0px;
+  padding:10px;
+}
+.nav_page {
+  text-decoration: none;
+  color: var(--deactivate-color);
+}
+.nav_page:hover {
+  color: var(--primary-color);
+}
+
+.logo {
+  color: var(--primary-color);
+}
+
+#menu_toggle {
+  display: none;
+}
+.menu_icon {
+  font-size: 30px;
+  color:var(--deactivate-color);
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .nav_links{
+    display:none;
+  }
+  .menu_icon {
+    display: block;
+  }
+  .nav_pages {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    background-color: var(--background);
+    border-radius: 0 0 10px 10px;
+  }
+  .nav_pages li {
+    margin: 15px 0;
+  }
+  .nav_page {
+    color: var(--deactivate-color);
+  }
+  /* when checkbox is checked, show menu */
+  #menu_toggle:checked + .menu_icon + .nav_pages {
+    display: flex;
+  }
+}
+/* NAVBAR STYLING END*/
