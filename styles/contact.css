@@ -5,9 +5,9 @@
   justify-content: space-around;
   gap: 30px;
   background-color: var(--primary-color);
-  border-radius: 10px;
+  border-radius: 15px;
   margin: 4vh 0;
-  padding: 5vh;
+  padding: 9vh 5vh;
 }
 .contact_info {
   display: flex;
