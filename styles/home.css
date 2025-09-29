@@ -1,0 +1,75 @@
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50vh;
+  gap: 30px;
+}
+.intro_text {
+  color: var(--text-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.profile_img {
+  width: 350px;
+  min-width: 350px;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10%;
+  border: 3px solid var(--border-color);
+}
+#my_job_title {
+  color: var(--primary-color);
+}
+
+#bold_text {
+  font-weight: bolder;
+}
+
+.btn_shape {
+  height: 40px;
+  padding: 0 30px;
+  border-radius: 7px;
+  font-size: 15px;
+  border: none;
+}
+.btn_primary {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+.btn_primary:hover {
+  background-color: var(--accent-color);
+  color: black;
+}
+.intro_btns {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 780px) {
+  .intro {
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 80vh;
+  }
+  .profile_img {
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 1200px)and (min-width:780px) {
+  .profile_img {
+    width: 250px;
+    min-width: 250px;
+    height: 250px;
+  }
+}

@@ -5,8 +5,9 @@
   --primary-color: #5392cd;
   --text-color: #fff;
   --border-color:#82a0bc;
-  --accent-color: #90c5f6;
+  --accent-color: #3d6d9a;
   --deactivate-color: #949495;
+  --activate-color:var(--accent-color);
 }
 
 * {
@@ -25,6 +26,16 @@ body{
 a {
   text-decoration: none;
 }
+
+.active{
+  color:var(--activate-color) !important;
+  text-decoration: underline !important;
+}
+
+main{
+  padding: 7vh 0;
+}
+
 /* NAVBAR STYLING */
 header {
   height: 7vh;
@@ -32,6 +43,8 @@ header {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px var(--deactivate-color) solid;
+  position: sticky;
+  top:0;
 }
 
 nav {
@@ -43,7 +56,6 @@ nav {
 }
 
 .nav_links {
-  /* width: 20%; */
   display: flex;
   gap:15px;
   list-style: none;
@@ -59,7 +71,6 @@ nav {
 }
 
 .nav_pages {
-  /* width: 60%; */
   display: flex;
   justify-self: flex-end;
   align-self: flex-end;

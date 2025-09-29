@@ -4,34 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hoda Jahangiri- Web Developer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">  
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
   </head>
   <body>
     <!-- HEADER-->
     <header>
-      <a href="./index.html"><h2 class="logo">Hoda Jahangiri</h2></a>
+      <a href="../pages/index.html"><h2 class="logo">Hoda Jahangiri</h2></a>
       <!-- NAVBAR -->
       <nav>
         <!-- LINKS LIST -->
         <ul class="nav_links">
-          <li><a href="https://www.linkedin.com/in/hoda-jahangiri-2b392599/" class="nav_link" target="_blank"><i class="bi bi-linkedin"></i></i></a></li>
-          <li><a href="https://github.com/hodajahangiri" class="nav_link" target="_blank"><i class="bi bi-github"></i></a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/hoda-jahangiri-2b392599/"
+              class="nav_link"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/hodajahangiri"
+              class="nav_link"
+              target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+          </li>
         </ul>
         <input type="checkbox" id="menu_toggle" />
         <label for="menu_toggle" class="menu_icon">&#9776;</label>
         <!-- PAGES LIST -->
         <ul class="nav_pages">
-          <li><a href="" class="nav_page">HOME</a></li>
-          <li><a href="./about.html" class="nav_link">ABOUT</a></li>
-          <li><a href="" class="nav_page">PROJECTS</a></li>
-          <li><a href="" class="nav_page">CONTACT</a></li>
+          <li>
+            <a href="../pages/index.html" class="nav_page active">HOME</a>
+          </li>
+          <li>
+            <a href="../pages/projects.html" class="nav_page">PROJECTS</a>
+          </li>
+          <li><a href="../pages/about.html" class="nav_link">ABOUT</a></li>
+          <li><a href="../pages/contact.html" class="nav_page">CONTACT</a></li>
         </ul>
       </nav>
       <!-- NAVBAR END -->
     </header>
     <!-- HEADER END -->
-    <main></main>
+    <!-- MAIN -->
+    <main>
+      <section class="intro">
+        <div class="intro_text">
+          <h1 class="my_heading">Hello, I'm Hoda Jahangiri</h1>
+          <h2 id="my_job_title">Software Engineer & Web Developer</h2>
+          <h3>Based in San jose, CA</h3>
+          <p>
+            I am a Full-stack Developer.<br />
+            My stack includes React.<br />
+            I build robust, scalable applications and elegant user experiences
+            using modern technology.
+          </p>
+          <p>
+            <span id="bold_text">Technical skills</span><br />
+            <span id="bold_text">Languages:</span> JavaScript, Python, HTML,
+            CSS, SQL<br />
+            <span id="bold_text">Frameworks:</span>React,Bootstrap<br />
+            <span id="bold_text">Tools:</span>Git/GitHub
+          </p>
+          <div class="intro_btns">
+            <a href="../pages/projects.html"><button class="btn_shape btn_primary">My Work</button></a>
+            <a href="../pages/about.html"><button class="btn_shape btn_primary">About Me</button></a>
+            <a href="../pages/contact.html"><button class="btn_shape btn_primary">Contact Me</button></a>
+          </div>
+        </div>
+        <img
+          class="profile_img"
+          src="../assets/profile_Img.jpg"
+          alt="profile picture"
+        />
+      </section>
+    </main>
+    <!-- MAIN END-->
     <footer></footer>
   </body>
 </html>
