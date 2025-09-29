@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>About Me</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
   </head>
   <body>
     <!-- HEADER-->
@@ -45,7 +46,9 @@
           <li>
             <a href="../pages/projects.html" class="nav_page">PROJECTS</a>
           </li>
-          <li><a href="../pages/about.html" class="nav_link active">ABOUT</a></li>
+          <li>
+            <a href="../pages/about.html" class="nav_link active">ABOUT</a>
+          </li>
           <li><a href="../pages/contact.html" class="nav_page">CONTACT</a></li>
         </ul>
       </nav>
@@ -54,7 +57,199 @@
     <!-- HEADER END -->
     <!-- MAIN -->
     <main>
-        
+      <section id="summary" class="about">
+        <div class="about_description">
+          <h1 class="about_description_title">Summary</h1>
+          <p>
+            Versatile Full-stack Developer with experience developing complex
+            responsive design.<br />
+            Neat & Well-organized<br />
+            Motivated by problem solving
+          </p>
+        </div>
+        <ul class="about_icons">
+          <img
+            class="about_profile_img"
+            src="../assets/profile_Img.jpg"
+            alt="Profile Picture"
+          />
+        </ul>
+      </section>
+      <section id="skills" class="about_reverse">
+        <div class="about_description">
+          <h1 class="about_description_title">Skills</h1>
+          <p>
+            I build responsive web pages. <br />
+            My focus is on creating seamless user experiences with high
+            performance and efficiency, leveraging modern technologies to
+            deliver robust, full-stack solutions.
+          </p>
+        </div>
+        <ul class="about_icons">
+          <!-- JAVAScript -->
+          <li class="about_icon_section">
+            <img class="icon_img" src="../assets/js_icon.png" alt="js icon" />
+            <p id="icon_caption">Javascript</p>
+          </li>
+          <!-- React -->
+          <li class="about_icon_section">
+            <img
+              class="icon_img"
+              src="../assets/react_icon.png"
+              alt="react icon"
+            />
+            <p id="icon_caption">React</p>
+          </li>
+          <!-- HTML -->
+          <li class="about_icon_section">
+            <img
+              class="icon_img"
+              src="../assets/html_icon.png"
+              alt="HTML icon"
+            />
+            <p id="icon_caption">HTML5</p>
+          </li>
+          <!-- CSS -->
+          <li class="about_icon_section">
+            <img class="icon_img" src="../assets/css_icon.png" alt="CSS icon" />
+            <p id="icon_caption">CSS</p>
+          </li>
+          <!-- Github -->
+          <li class="about_icon_section">
+            <img
+              class="icon_img"
+              src="../assets/github_icon.png"
+              alt="Github icon"
+            />
+            <p id="icon_caption">Github</p>
+          </li>
+          <!-- Bootstrap -->
+          <li class="about_icon_section">
+            <img
+              class="icon_img"
+              src="../assets/bootstrap_icon.png"
+              alt="bootstrap icon"
+            />
+            <p id="icon_caption">Bootstrap</p>
+          </li>
+          <!-- API -->
+          <li class="about_icon_section">
+            <img class="icon_img" src="../assets/API_icon.png" alt="API icon" />
+            <p id="icon_caption">API</p>
+          </li>
+          <!-- SQL -->
+          <li class="about_icon_section">
+            <img
+              class="icon_img"
+              src="../assets/sql-server_icon.png"
+              alt="SQL icon"
+            />
+            <p id="icon_caption">SQL</p>
+          </li>
+        </ul>
+      </section>
+      <section id="education" class="about">
+        <div class="about_description">
+          <h1 class="about_description_title">Education</h1>
+          <p>
+            <span id="bold_text" class="primary_color">Coding temple: </span>
+            Software Engineering<br />
+            <span>San Jose, California</span><br />
+            <span>September, 2025,present</span>
+          </p>
+          <p>
+            <span id="bold_text" class="primary_color"
+              >University of Tehran:
+            </span>
+            Master of Science in Computer Engineering<br />
+            <span>Tehran, Iran</span><br />
+            <span>September, 2014 - September, 2017</span>
+          </p>
+          <p>
+            <span id="bold_text" class="primary_color"
+              >Sharif University of Technology:
+            </span>
+            Bachelor of Science in Computer Science<br />
+            <span>Tehran, Iran</span><br />
+            <span>September, 2008 - September, 2013</span>
+          </p>
+        </div>
+        <ul class="about_icons">
+          <!-- Coding Temple -->
+          <li class="about_icon_section">
+            <img
+              class="icon_uni_img"
+              src="../assets/coding_temple_icon.png"
+              alt="coding temple icon"
+            />
+          </li>
+          <!-- tehran university -->
+          <li class="about_icon_section">
+            <img
+              class="icon_uni_img"
+              src="../assets/tehran_uni_icon.png"
+              alt="tehran university icon"
+            />
+          </li>
+          <!-- Sharif university -->
+          <li class="about_icon_section">
+            <img
+              class="icon_uni_img"
+              src="../assets/Sharif_uni_icon.png"
+              alt="sharif university icon"
+            />
+          </li>
+        </ul>
+      </section>
+      <section id="hobbies" class="about_reverse">
+        <div class="about_description">
+          <h1 class="about_description_title">Hobbies</h1>
+          <p>My primary passion is programming, I always welcome challenges.</p>
+          <p>
+            I am a nature girl, my favorite hobby is being in nature. I love
+            hiking, biking and camping <br />I am playing Tonbak(persian
+            instrument).
+          </p>
+        </div>
+        <ul class="about_icons">
+          <!-- coding -->
+          <li class="about_icon_section">
+            <img
+              class="icon_img"
+              src="../assets/programming_icon.png"
+              alt="js icon"
+            />
+            <p id="icon_caption">Coding</p>
+          </li>
+          <!-- camping -->
+          <li class="about_icon_section">
+            <img
+              class="icon_img"
+              src="../assets/camping_icon.png"
+              alt="camping icon"
+            />
+            <p id="icon_caption">Camping</p>
+          </li>
+          <!-- hiking -->
+          <li class="about_icon_section">
+            <img
+              class="icon_img"
+              src="../assets/hiking_icon.png"
+              alt="hiking icon"
+            />
+            <p id="icon_caption">Hiking</p>
+          </li>
+          <!-- biking -->
+          <li class="about_icon_section">
+            <img
+              class="icon_img"
+              src="../assets/biking_icon.png"
+              alt="biking icon"
+            />
+            <p id="icon_caption">Biking</p>
+          </li>
+        </ul>
+      </section>
     </main>
     <!-- MAIN END-->
     <footer>
